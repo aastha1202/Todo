@@ -144,7 +144,7 @@ const Create = () => {
       };
       const saveTask=()=>{
         console.log(rows)
-        axios.post('https://to-do-api-d9fp.vercel.app/todo', {task:rows})
+        axios.post('https://api-puce-xi.vercel.app/todo', {task:rows})
         .then((response) => {
           console.log(response);
           alert("Tasks saved successfully");
