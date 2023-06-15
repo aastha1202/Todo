@@ -5,7 +5,7 @@ import dayjs from 'dayjs'
 const User = () => {
     const [todo,setTodos]=useState([])
     useEffect(() => {
-        axios.get('https://to-do-api-rho.vercel.app/todo')
+        axios.get('https://to-do-api-rca9.vercel.app//todo')
         .then((response) => {
           setTodos(response.data);
           console.log(todo)
