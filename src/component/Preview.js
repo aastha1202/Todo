@@ -20,7 +20,7 @@ const realTime= dayjs().hour(hour).minute(minute);
       const [dayOfWeek,month,year] = formattedDate.split(',');
 
       useEffect(() => {
-        axios.get('https://to-do-api-rho.vercel.app/todo')
+        axios.get('https://to-do-api-ndrh.vercel.app/todo')
         .then((response) => {
           setTodos(response.data);
         })
