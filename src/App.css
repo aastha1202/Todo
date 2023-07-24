@@ -30,10 +30,15 @@ font-style: normal;
 font-weight: 500;
 font-size: 20px;
 line-height: 36px;
-
+}
+.flex-date-div{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .previewDiv ul{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: 'Poppins';
@@ -107,7 +112,7 @@ line-height: 112px;
 }
 .form-body{
   background-color: #F0F0F0;
-  width: 60%;
+  width: 80%;
   margin:40px auto;
   min-height: 100vh;
   border-radius: 36px;
@@ -117,7 +122,7 @@ line-height: 112px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 90px;
+  gap: 160px;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -130,7 +135,7 @@ line-height: 36px;
   padding: 16px 24px 14px;
   flex-direction: column;
   align-items: flex-start;
-  width: 35%;
+  width: 30%;
   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
   margin: 20px 30px 0px 30px;
 }
@@ -162,7 +167,7 @@ line-height: 16px;
 }
 .timepicker{
   /* background: #FFFFFF; */
-  width: max-content;
+  width: 50%;
   padding: 20px;
   margin: 20px 30px;
 }
@@ -195,6 +200,9 @@ text-transform: uppercase;
   margin-left: 82px;
   margin-top: 30px;
 }
+a{
+  text-decoration: none;
+}
 .save-button,.create{
   background: #FE0316;
   border-radius: 19px;
@@ -209,18 +217,48 @@ line-height: 27px;
 .save-button{
   margin-top: 180px;
 }
+.disable-btn{
+  margin-top: 180px;
+  background:#ff6f7b ;
+  color: white;
+  border-radius: 19px;
+  border: none;
+  padding: 5px 13px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+}
 .button{
   display: flex;
   justify-content: end;
 }
+.loader {
+  margin-top: 185px;
+  margin-right: 10px;
+  border: 5px solid #c2c2c2; 
+  border-top: 5px solid grey; 
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 .time-display{
   display: flex;
+  gap: 10px;
   align-items: center;
+  justify-content: center;
 }
 .time{
   display: flex;
   flex-direction: column;
-  margin-left: 27px;
+  margin-left: 10px;
   background: white;
   border: none;
   cursor: pointer;
